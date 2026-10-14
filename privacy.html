@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiaMail プライバシーポリシー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p><a href="./">MiaMail</a></p>
+<h1>プライバシーポリシー</h1>
+<p>制定日: 2026年10月14日</p>
+
+<p>MiaMail（以下「本アプリ」）は、開発者本人が自分のMacで使うための個人用メールクライアントです。本ポリシーは、本アプリがGoogleユーザーデータをどのように扱うかを説明します。</p>
+
+<h2>取得するデータ</h2>
+<p>本アプリはGoogle OAuthで <code>https://www.googleapis.com/auth/gmail.modify</code> の権限を求め、Gmail APIから次のデータを取得します。</p>
+<ul>
+<li>Googleアカウントのメールアドレス</li>
+<li>受信トレイのメッセージの差出人、件名、日付、抜粋、ラベル</li>
+<li>利用者がメールを開いたときの本文と添付ファイル名</li>
+</ul>
+
+<h2>利用目的</h2>
+<p>取得したデータは、受信箱の一覧表示、新着通知、本文の表示、既読・未読の切り替え、アーカイブ、ゴミ箱への移動、利用者が作成したメールの送信のためだけに使います。広告、プロファイリング、機械学習モデルの学習には使いません。</p>
+
+<h2>保存</h2>
+<ul>
+<li>メールの一覧と本文はアプリの実行中にメモリ上で保持するだけで、ディスクには保存しません。</li>
+<li>OAuthのリフレッシュトークンとクライアント情報は、利用者のMacのキーチェーンに保存します。アクセストークンはメモリ上でのみ保持します。</li>
+<li>登録したアカウントのメールアドレスは、利用者のMac内の設定ファイルに保存します。</li>
+<li>新着通知として、差出人と件名がmacOSの通知センターに表示されます。</li>
+</ul>
+
+<h2>共有と送信先</h2>
+<p>本アプリは、GoogleのAPI（<code>gmail.googleapis.com</code>、<code>oauth2.googleapis.com</code>）とのみ通信します。開発者が運営するサーバーはなく、Googleユーザーデータを開発者や第三者へ送信、販売、共有することはありません。</p>
+
+<h2>Google API Services User Data Policy への準拠</h2>
+<p>本アプリによるGoogle APIから取得した情報の利用と他のアプリへの転送は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use要件を含む）に従います。</p>
+
+<h2>データの削除とアクセスの取り消し</h2>
+<ul>
+<li>本アプリの設定からアカウントを削除すると、キーチェーンに保存した認証情報も削除されます。</li>
+<li><a href="https://myaccount.google.com/permissions">Googleアカウントの「サードパーティ製のアプリとサービス」</a>から、本アプリへのアクセスをいつでも取り消せます。</li>
+<li>Gmail上のメールは、本アプリでアカウントを削除しても削除されません。</li>
+</ul>
+
+<h2>改定</h2>
+<p>本ポリシーを変更する場合は、このページを更新し、制定日の欄に改定日を記載します。</p>
+
+<h2>連絡先</h2>
+<p><a href="https://github.com/inkepoch">GitHub: inkepoch</a></p>
+</main>
+</body>
+</html>
